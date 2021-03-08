@@ -288,10 +288,47 @@ a {
     grid-template-columns: 1fr 1fr;
 }
 
-.ramen {
+.ramen,.sushi{
     width: 70%;
 }
 
-.top-ramen {
+.top-ramen,.top-sushi {
     text-align: center;
+}
+
+.about-us,.read-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.welcome{
+    font-weight: 100;
+}
+
+.about-paragraph{
+    font-size: 1.4rem;
+    color:#afafaf;
+    line-height: 1.5;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#333;
+    z-index: 1;
+    margin-bottom: 4rem;
+}
+
+.btn:hover{
+    color: #c59d5f;
+}
+
+.third-grid{
+    margin-top: 10rem;
 }
