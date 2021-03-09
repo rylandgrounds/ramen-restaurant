@@ -405,3 +405,53 @@ a {
     margin-bottom: 2rem;
     text-align: center;
 }
+
+/* Customers */
+.carousel div {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.carousel img {
+    margin: 0 auto;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #bc9321 !important;
+    font-size: 3rem;
+}
+
+.slick-prev {
+    margin-left: 10rem;
+}
+
+.slick-next {
+    margin-right: 10rem;
+}
+
+.customers {
+    padding-bottom: 20rem;
+}
+
+.customers h3 {
+    margin-bottom: 3rem;
+}
+
+.glide {
+    text-align: center;
+}
+
+.glide__arrow {
+    color: #000;
+}
+
+.testimonial-paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #afafaf;
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 500px;
+    text-align: center;
+}

@@ -13,3 +13,15 @@ navLinks.forEach(link => {
         body.classList.toggle("open");
     })
 })
+
+//Carousel
+$(document).ready(function() {
+$(".carousel").slick(
+    {
+        autoPlay: true,
+        autoPlaySpeed: 3000,
+        speed: 1000,
+        dots: true
+    }
+)
+})
