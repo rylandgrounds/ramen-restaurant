@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
+    <!--Google Fonts/Font Awesome-->
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&family=Sacramento&display=swap"
       rel="stylesheet"
@@ -15,18 +16,38 @@
       crossorigin="anonymous"
     ></script>
     <!-- Slick Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+            integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
+            crossorigin="anonymous"
+        />
+
+    <!--Animated Scroll-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Style.css-->
     <link rel="stylesheet" href="style.css" />
     <title>Gato Romen</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container-fluid">
         <nav class="nav">
           <a href="index.html" class="logo">
-            <img src="img/logo.png" height="100" width="100" alt="logo" />
+            <img src="img/logo.png" 
+            width="75px" 
+            height="75px"
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            alt="logo" />
           </a>
 
           <div class="nav__button">
@@ -39,9 +60,6 @@
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#team" class="nav-link">Team</a>
             </li>
             <li class="nav-item">
               <a href="#menu" class="nav-link">Menu</a>
@@ -64,8 +82,13 @@
     <main>
       <div class="hero" id="home">
         <div class="container">
-          <div class="premium-container">
-            <img class="premium" src="img/hero.jpg" height="50" width="50" alt="Premium" />
+          <div class="squid-container">
+            <img class="squid" src="img/fresh.jpg" 
+            width="10%" 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+             alt="Squid" />
             <h3 class="quality">Quality</h3>
           </div>
 
@@ -82,8 +105,8 @@
 
       <section class="offers">
         <div class="container">
-          <h2 class="section-title">From our hearts</h2>
-          <h3 class="section-subtitle">to your bowls</h3>
+          <h2 class="section-title">From our minds</h2>
+          <h3 class="section-subtitle">to your stomachs</h3>
           <div class="three-columns-grid">
             <div
               class="grid-item"
@@ -91,7 +114,11 @@
               data-aos-offset="400"
               data-aos-duration="1000"
             >
-              <img src="img/bowl-of-ramen-with-salmon-JPAA2SP.jpg" height="100" width="100" alt="" width="200" />
+              <img
+                src="img/bowl-of-ramen-with-salmon-JPAA2SP.jpg"
+                alt=""
+                width="200"
+              />
               <h3 class="subtitle"><strong>Fresh</strong> Salmon</h3>
               <p class="paragraph">
                 Nullam id venenatis erat. Aliquam erat volutpat. Vestibulum ante
@@ -107,7 +134,7 @@
               data-aos-offset="400"
               data-aos-duration="1000"
             >
-              <img src="img/pork-ribs-ramen-QXCTD37.jpg" height="100" width="100"  alt="" width="200" />
+              <img src="img/pork-ribs-ramen-QXCTD37.jpg" alt="" width="200" />
               <h3 class="subtitle"><strong>Hearty</strong> Ribs</h3>
               <p class="paragraph">
                 Cras ullamcorper maximus mattis. Sed placerat congue orci sit
@@ -124,8 +151,12 @@
               data-aos-offset="400"
               data-aos-duration="1000"
             >
-              <img src="img/ramen-soup-in-bowl-rich-flavour-chicken-broth-with-CEYDUZW.jpg" height="100" width="100" alt="" width="200" />
-              <h3 class="subtitle"><strong>Chicken/strong> Ramen</h3>
+              <img
+                src="img/ramen-soup-in-bowl-rich-flavour-chicken-broth-with-CEYDUZW.jpg"
+                alt=""
+                width="200"
+              />
+              <h3 class="subtitle"><strong>Chicken</strong> Ramen</h3>
               <p class="paragraph">
                 Aenean at magna in lorem euismod commodo rhoncus at ex. Orci
                 varius natoque penatibus et magnis dis parturient montes,
@@ -135,286 +166,324 @@
           </div>
         </div>
       </section>
+
       <section class="about" id="about">
         <div class="container-fluid">
-            <div class="two-columns-grid">
-                <div
-                    class="top-ramen"
-                    data-aos="fade-right"
-                    data-aos-offset="400"
-                    data-aos-duration="1000"
-                >
-                    <img src="img/japanese-nodle-soup-ramen-RWDTJP5.jpg" width="50%" height="50%"alt="Ramen" class="ramen" />
-                </div>
-                <div
-                class="about-us"
-                data-aos="fade-left"
-                data-aos-offset="400"
-                data-aos-duration="1000"
+          <div class="two-columns-grid">
+            <div
+              class="top-tart"
+              data-aos="fade-right"
+              data-aos-offset="400"
+              data-aos-duration="1000"
             >
-                <h2 class="section-title welcome">
-                    Welcome to Gato Ramen! Praise our Feline Overlords
-                </h2>
-                <p class="about-paragraph">
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras sollicitudin id dui id congue. Vivamus nec dictum metus. Morbi ornare ligula vitae erat pulvinar, non sollicitudin odio molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium hendrerit purus, id varius turpis consectetur euismod.
-                </p>
-                <a href="#" class="btn">About Us</a>
+              <img
+                src="img/japanese-nodle-soup-ramen-RWDTJP5.jpg"
+                alt="Ramen"
+                class="ramen"
+              />
             </div>
-        </div>
-
-      </div>
-
-      <div class="two-columns-grid third-grid">
-        <div class="read-more">
-          <h2 class="section-title welcome">
-            Chef and Owner: Nicholas Gatobi
-          </h2>
-          <p class="about-paragraph">
-            Phasellus porta feugiat hendrerit. Donec consectetur tellus libero, quis porta lorem hendrerit quis. Duis porta dui id nisi tempor, at auctor nisl sagittis. 
-          </p>
-          <a href="#" class="btn">Read More</a>
+            <div
+              class="about-us"
+              data-aos="fade-left"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <h2 class="section-title welcome">
+                Welcome to Gato Ramen! Praise our Feline Overlords
+              </h2>
+              <p class="about-paragraph">
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Cras sollicitudin id dui id congue. Vivamus nec dictum metus.
+                Morbi ornare ligula vitae erat pulvinar, non sollicitudin odio
+                molestie. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nunc pretium hendrerit purus, id varius turpis consectetur
+                euismod.
+              </p>
+              <a href="#" class="btn">About Us</a>
+            </div>
           </div>
-          <div
-          class="top-ramen"
-          data-aos="fade-left"
-          data-aos-offset="400"
-          data-aos-duration="1000"
-      >
-          <img
-              src="img/sushi-set-served-sushi-variety-TCXKA9K.jpg"
-              alt="Sushi"
-              class="Sushi"
-          />
-      </div>
+
+          <div class="two-columns-grid third-grid">
+            <div
+              class="read-more"
+              data-aos="fade-right"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <h2 class="section-title welcome">
+                Chef and Owner: Nicholas Gatobi
+              </h2>
+              <p class="about-paragraph">
+                Phasellus porta feugiat hendrerit. Donec consectetur tellus
+                libero, quis porta lorem hendrerit quis. Duis porta dui id nisi
+                tempor, at auctor nisl sagittis.
+              </p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div
+              class="top-ramen"
+              data-aos="fade-left"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/nCt9kKC.jpg"
+                alt="Nicholas Cage Cat"
+                class="ramen"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="menu" id="menu">
-      <div class="menu-header"></div>
-      <div
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="menu-header"></div>
+        <div
           class="menu-card"
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-duration="1000"
-      >
+        >
           <div class="menu-card-header">
-              <img
-                  class="sushi"
-                  src="img/Sushi-maki.png"
-                  alt="Maki Sushi"
-              />
-              <h2 class="section-title menu-title">
-                 Savor the Perfection
-              </h2>
-              <h3 class="section-subtitle">Of Nicholas Gatobi Sushi and Ramen!</h3>
+            <img class="sushi" src="img/307-3079301_enns-japanese-cuisine-sushi-icon.png" 
+            width="100"
+            height="150px"
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            alt="Maki Sushi" />
+            <h2 class="section-title menu-title"> Savor the Perfection</h2>
+            <h3 class="section-subtitle">
+              Of Nicholas Gatobi Sushi and Ramen!
+            </h3>
           </div>
 
           <div class="two-columns-grid">
-              <div class="starters">
-                  <h2>Starters</h2>
-                  <div class="starter">
-                      <div class="starter-header">
-                          <h3>Proin gravida gravida</h3>
-                          <h4 class="price">$10.50</h4>
-                      </div>
-                      <p class="menu-paragraph">
-                          Lorem ipsum dolor sit amet purus vitae
-                          libero lacinia accumsan vitae, dapibus et.
-                      </p>
-                  </div>
-
-                  <div class="starter">
-                      <div class="starter-header">
-                          <h3>Proin gravida gravida</h3>
-                          <h4 class="price">$10.50</h4>
-                      </div>
-                      <p class="menu-paragraph">
-                          Lorem ipsum dolor sit amet purus vitae
-                          libero lacinia accumsan vitae, dapibus et.
-                      </p>
-                  </div>
-
-                  <div class="starter">
-                      <div class="starter-header">
-                          <h3>Proin gravida gravida</h3>
-                          <h4 class="price">$10.50</h4>
-                      </div>
-                      <p class="menu-paragraph">
-                          Lorem ipsum dolor sit amet purus vitae
-                          libero lacinia accumsan vitae, dapibus et.
-                      </p>
-                  </div>
+            <div class="starters">
+              <h2>Starters</h2>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Proin gravida gravida</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
+                  vitae, dapibus et.
+                </p>
               </div>
-              <div class="mains">
-                  <h2>Mains</h2>
-                  <div class="starter">
-                      <div class="starter-header">
-                          <h3>Proin gravida gravida</h3>
-                          <h4 class="price">$10.50</h4>
-                      </div>
-                      <p class="menu-paragraph">
-                          Lorem ipsum dolor sit amet purus vitae
-                          libero lacinia accumsan vitae, dapibus et.
-                      </p>
-                  </div>
 
-                  <div class="starter">
-                      <div class="starter-header">
-                          <h3>Proin gravida gravida</h3>
-                          <h4 class="price">$10.50</h4>
-                      </div>
-                      <p class="menu-paragraph">
-                          Lorem ipsum dolor sit amet purus vitae
-                          libero lacinia accumsan vitae, dapibus et.
-                      </p>
-                  </div>
-
-                  <div class="starter">
-                      <div class="starter-header">
-                          <h3>Proin gravida gravida</h3>
-                          <h4 class="price">$10.50</h4>
-                      </div>
-                      <p class="menu-paragraph">
-                          Lorem ipsum dolor sit amet purus vitae
-                          libero lacinia accumsan vitae, dapibus et.
-                      </p>
-                  </div>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Proin gravida gravida</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
+                  vitae, dapibus et.
+                </p>
               </div>
-          </div>
-      </div>
-    </section>
-    <section class="customers">
-      <div class="container">
-        <h2 class="section-title">Customer</h2>
-        <h3 class="section-subtitle">Stories About Us</h3>
-        <div class="carousel">
-          <div>
-            <img src="http://placehold.it/" alt="placeholder">
-            <p class="testimonial-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit lectus, lacinia sed eros et, imperdiet consectetur felis. Nulla libero lorem, aliquet vitae nulla sed, scelerisque convallis erat. Nulla lacinia dui quis hendrerit laoreet. Suspendisse id feugiat nulla, ac vehicula nibh.
-            </p>
-            <h2 class="name">Nicholas-Cage Conair</h2>
-          </div>
-          <div>
-            <img src="http://placehold.it/" alt="placeholder">
-            <p class="testimonial-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit lectus, lacinia sed eros et, imperdiet consectetur felis. Nulla libero lorem, aliquet vitae nulla sed, scelerisque convallis erat. Nulla lacinia dui quis hendrerit laoreet. Suspendisse id feugiat nulla, ac vehicula nibh.
-            </p>
-            <h2 class="name">Nicholas-Other Movie</h2>
+
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Proin gravida gravida</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
+                  vitae, dapibus et.
+                </p>
+              </div>
+            </div>
+            <div class="mains">
+              <h2>Mains</h2>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Proin gravida gravida</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
+                  vitae, dapibus et.
+                </p>
+              </div>
+
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Proin gravida gravida</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
+                  vitae, dapibus et.
+                </p>
+              </div>
+
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Proin gravida gravida</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan
+                  vitae, dapibus et.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="book" id="reservation">
-      <div class="container-fluid">
-          <div class="book-card">
-              <h2 class="section-title book-title">
-                  Select a Date & Book Now
-              </h2>
-              <h3 class="section-subtitle">
-                  We will confirm order via E-mail or Phone
-              </h3>
-              <div class="two-columns-grid">
-                  <div class="form-group">
-                      <input
-                          type="text"
-                          id="first"
-                          class="input"
-                          placeholder="First Name*"
-                      />
-                  </div>
-                  <div class="form-group">
-                      <input
-                          type="text"
-                          id="last"
-                          class="input"
-                          placeholder="Last Name*"
-                      />
-                  </div>
-              </div>
-
-              <div class="two-columns-grid">
-                  <div class="form-group">
-                      <input
-                          type="email"
-                          id="email"
-                          class="input"
-                          placeholder="E-mail Address*"
-                      />
-                  </div>
-                  <div class="form-group">
-                      <input
-                          type="text"
-                          id="phone"
-                          class="input"
-                          placeholder="Phone Number"
-                      />
-                  </div>
-              </div>
-
-              <div class="three-columns-grid">
-                  <div class="form-group">
-                      <input type="date" id="date" />
-                  </div>
-                  <div class="form-group">
-                      <select name="time" id="time">
-                          <option value="">9:00</option>
-                          <option value="">9:30</option>
-                          <option value="">10:00</option>
-                          <option value="">10:30</option>
-                          <option value="">11:00</option>
-                          <option value="">11:30</option>
-                          <option value="">12:00</option>
-                          <option value="">12:30</option>
-                          <option value="">13:00</option>
-                          <option value="">13:30</option>
-                          <option value="">14:00</option>
-                          <option value="">14:30</option>
-                          <option value="">15:00</option>
-                          <option value="">15:30</option>
-                          <option value="">16:00</option>
-                          <option value="">16:30</option>
-                          <option value="">17:00</option>
-                          <option value="">17:30</option>
-                          <option value="">18:00</option>
-                          <option value="">18:30</option>
-                          <option value="">19:00</option>
-                          <option value="">19:30</option>
-                          <option value="">20:00</option>
-                          <option value="">20:30</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <select name="people" id="people">
-                          <option value="">1 Person</option>
-                          <option value="">2 People</option>
-                          <option value="">3 People</option>
-                          <option value="">4 People</option>
-                          <option value="">5 People</option>
-                          <option value="">6 People</option>
-                          <option value="">7 People</option>
-                          <option value="">8 People</option>
-                          <option value="">9 People</option>
-                          <option value="">10 People</option>
-                          <option value="">11 People</option>
-                      </select>
-                  </div>
-              </div>
-              <a href="#" class="btn btn-book">Book Now</a>
+      </section>
+      <section class="customers">
+        <div class="container">
+          <h2 class="section-title">Customer</h2>
+          <h3 class="section-subtitle">Stories About Us</h3>
+          <div class="carousel">
+            <div>
+              <img src="img/nicolas-cage-as-cameron-poe-in-con-air-1997.jpg" 
+            width="200"
+              alt="Nicholas Cage Con Air" />
+              <p class="testimonial-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                velit lectus, lacinia sed eros et, imperdiet consectetur felis.
+                Nulla libero lorem, aliquet vitae nulla sed, scelerisque
+                convallis erat. Nulla lacinia dui quis hendrerit laoreet.
+                Suspendisse id feugiat nulla, ac vehicula nibh.
+              </p>
+              <h2 class="name">Nicholas-Cage Conair</h2>
+            </div>
+            <div>
+              <img src="img/5159f21969bedd2c13000015.jpeg" 
+            width="200"
+            alt="Nicholasi"/>
+              <p class="testimonial-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                velit lectus, lacinia sed eros et, imperdiet consectetur felis.
+                Nulla libero lorem, aliquet vitae nulla sed, scelerisque
+                convallis erat. Nulla lacinia dui quis hendrerit laoreet.
+                Suspendisse id feugiat nulla, ac vehicula nibh.
+              </p>
+              <h2 class="name">Nicholasi</h2>
+            </div>
           </div>
-      </div>
-  </section>
+        </div>
+      </section>
+
+      <section class="book" id="reservation">
+        <div class="container-fluid">
+          <div class="book-card">
+            <h2 class="section-title book-title">Select a Date & Book Now</h2>
+            <h3 class="section-subtitle">
+              We will confirm order via E-mail or Phone
+            </h3>
+            <div class="two-columns-grid">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="first"
+                  class="input"
+                  placeholder="First Name*"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="last"
+                  class="input"
+                  placeholder="Last Name*"
+                />
+              </div>
+            </div>
+
+            <div class="two-columns-grid">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  class="input"
+                  placeholder="E-mail Address*"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="phone"
+                  class="input"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+
+            <div class="three-columns-grid">
+              <div class="form-group">
+                <input type="date" id="date" />
+              </div>
+              <div class="form-group">
+                <select name="time" id="time">
+                  <option value="">9:00</option>
+                  <option value="">9:30</option>
+                  <option value="">10:00</option>
+                  <option value="">10:30</option>
+                  <option value="">11:00</option>
+                  <option value="">11:30</option>
+                  <option value="">12:00</option>
+                  <option value="">12:30</option>
+                  <option value="">13:00</option>
+                  <option value="">13:30</option>
+                  <option value="">14:00</option>
+                  <option value="">14:30</option>
+                  <option value="">15:00</option>
+                  <option value="">15:30</option>
+                  <option value="">16:00</option>
+                  <option value="">16:30</option>
+                  <option value="">17:00</option>
+                  <option value="">17:30</option>
+                  <option value="">18:00</option>
+                  <option value="">18:30</option>
+                  <option value="">19:00</option>
+                  <option value="">19:30</option>
+                  <option value="">20:00</option>
+                  <option value="">20:30</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select name="people" id="people">
+                  <option value="">1 Person</option>
+                  <option value="">2 People</option>
+                  <option value="">3 People</option>
+                  <option value="">4 People</option>
+                  <option value="">5 People</option>
+                  <option value="">6 People</option>
+                  <option value="">7 People</option>
+                  <option value="">8 People</option>
+                  <option value="">9 People</option>
+                  <option value="">10 People</option>
+                  <option value="">11 People</option>
+                </select>
+              </div>
+            </div>
+            <a href="#" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <p class="copyright">
-          Copyright &copy; 2020 by Ryland Grounds. All rights reserved.
+        Copyright &copy; 2020 by Ryland Grounds. All rights reserved.
       </p>
-  </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
+    crossorigin="anonymous"
+></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
-
-
